@@ -48,7 +48,8 @@ spplot(prediction,col.regions=c("brown","darkgreen","black","yellow","green","wh
 
 ## Model validation
 
-
+pred_valid<-predict(model,testDat)
+table(testDat$Class,pred_valid)
 
 
 
